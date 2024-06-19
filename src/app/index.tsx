@@ -7,10 +7,15 @@ export default function Home() {
             flex: 1,
             backgroundColor:"#232F3E",
             alignItems: "flex-start",
+          
+          
         },
     
         header:{
-    
+          width: "100%",
+          paddingTop: 80,
+          alignItems: "center",
+          justifyContent: "center",
         },
 
         primeLogoImg:{
@@ -18,12 +23,28 @@ export default function Home() {
         },
 
         amazonLogoImg:{
+          marginTop: -32,
+          marginLeft: 30,
+
 
         },
 
         category:{
+          width: "100%",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+          marginTop: 30,
+          marginBottom: 15,
 
         },
+
+        categoryText:{
+          fontSize: 18,
+          fontWeight: "700",
+          color: "#FFf"
+
+
+        }
 
         
     });
@@ -37,19 +58,19 @@ export default function Home() {
          </View>
          <View style={styles.category}>
             <TouchableOpacity>
-              <Text>Home</Text>  
+              <Text style={styles.categoryText}>Home</Text>  
             </TouchableOpacity>
 
             <TouchableOpacity>
-              <Text>TV Shows</Text>  
+              <Text style={styles.categoryText}>TV Shows</Text>  
             </TouchableOpacity>
 
             <TouchableOpacity>
-              <Text>Movies</Text>  
+              <Text style={styles.categoryText}>Movies</Text>  
             </TouchableOpacity>
 
             <TouchableOpacity>
-              <Text>Kids</Text>  
+              <Text style={styles.categoryText}>Kids</Text>  
             </TouchableOpacity>
 
 
